@@ -32,7 +32,28 @@ const userSchema = new mongoose.Schema({
         profilePhoto:{
             type:String,
             default:""
-        }
+        },
+        linkedin: { type: String, default: "" },  
+        leetcode: { type: String, default: "" },  
+        portfolio: { type: String, default: "" },  
+        workExperience: [{
+            title: { type: String},
+            company: { type: String },
+            description: { type: String},
+            link: { type: String },
+            startDate: { type: Date },
+            endDate: { type: Date }
+        }],
+        projects: [{
+            title: { type: String},
+            description: { type: String},
+            link: { type: String }
+        }],
+        achievements: [{
+            title: { type: String },
+            description: { type: String}
+        }]
+
     },
 },{timestamps:true});
 export const User = mongoose.model('User', userSchema);
