@@ -63,14 +63,13 @@ export const getAppliedJobs = async (req,res) => {
             })
         };
         return res.status(200).json({
-            application,
+            appliedJobs: application, 
             success:true
         })
     } catch (error) {
         console.log(error);
     }
 }
-// admin dekhega kitna user ne apply kiya hai
 export const getApplicants = async (req,res) => {
     try {
         const jobId = req.params.id;
@@ -128,3 +127,40 @@ export const updateStatus = async (req,res) => {
         console.log(error);
     }
 }
+
+export const withdrawApplication = async (req, res) => {
+    try {
+        const userId = req.id;
+        const jobId = req.params.id;
+
+        // Find the application
+        const application = await Application.findOne({ job: jobId, applicant: userId });
+
+        if (!application) {
+            return res.status(404).json({
+                message: "Application not found",
+                success: false
+            });
+        }
+
+        // Remove application from Job's applications array
+        await Job.findByIdAndUpdate(jobId, {
+            $pull: { applications: application._id }
+        });
+
+        // Delete the application
+        await Application.findByIdAndDelete(application._id);
+
+        return res.status(200).json({
+            message: "Application withdrawn successfully.",
+            success: true
+        });
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            message: "Server error",
+            success: false
+        });
+    }
+};
