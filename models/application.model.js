@@ -15,6 +15,25 @@ const applicationSchema = new mongoose.Schema({
         type:String,
         enum:['pending', 'accepted', 'rejected'],
         default:'pending'
+    },
+
+    referral: { 
+        name: {
+            type: String,
+            default: ''
+        },
+        email: {
+            type: String,
+            default: ''
+        },
+        phone: {
+            type: String,
+            default: ''
+        }
     }
+
+
+
+
 },{timestamps:true});
 export const Application  = mongoose.model("Application", applicationSchema);

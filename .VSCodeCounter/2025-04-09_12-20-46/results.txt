@@ -1,0 +1,55 @@
+Date : 2025-04-09 12:20:46
+Directory : d:\Projects\Job_Portal\backend
+Total : 23 files,  4135 codes, 21 comments, 100 blanks, all 4256 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          3 |      3,389 |          0 |          3 |      3,392 |
+| JavaScript |         19 |        745 |         21 |         96 |        862 |
+| Markdown   |          1 |          1 |          0 |          1 |          2 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                 | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                    |         23 |      4,135 |         21 |        100 |      4,256 |
+| . (Files)                                                            |          5 |      3,419 |          4 |         11 |      3,434 |
+| controllers                                                          |          4 |        449 |         17 |         49 |        515 |
+| middlewares                                                          |          2 |         27 |          0 |          2 |         29 |
+| models                                                               |          4 |        153 |          0 |          5 |        158 |
+| routes                                                               |          5 |         59 |          0 |         28 |         87 |
+| utils                                                                |          3 |         28 |          0 |          5 |         33 |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                             | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\Projects\Job_Portal\backend\README.md                             | Markdown   |          1 |          0 |          1 |          2 |
+| d:\Projects\Job_Portal\backend\controllers\application.controller.js | JavaScript |        116 |          6 |          8 |        130 |
+| d:\Projects\Job_Portal\backend\controllers\company.controller.js     | JavaScript |         91 |          2 |          7 |        100 |
+| d:\Projects\Job_Portal\backend\controllers\job.controller.js         | JavaScript |         96 |          4 |          3 |        103 |
+| d:\Projects\Job_Portal\backend\controllers\user.controller.js        | JavaScript |        146 |          5 |         31 |        182 |
+| d:\Projects\Job_Portal\backend\index.js                              | JavaScript |         29 |          4 |          7 |         40 |
+| d:\Projects\Job_Portal\backend\jayant-507df-57bdf41de874.json        | JSON       |         13 |          0 |          1 |         14 |
+| d:\Projects\Job_Portal\backend\middlewares\isAuthenticated.js        | JavaScript |         24 |          0 |          1 |         25 |
+| d:\Projects\Job_Portal\backend\middlewares\mutler.js                 | JavaScript |          3 |          0 |          1 |          4 |
+| d:\Projects\Job_Portal\backend\models\application.model.js           | JavaScript |         19 |          0 |          1 |         20 |
+| d:\Projects\Job_Portal\backend\models\company.model.js               | JavaScript |         26 |          0 |          1 |         27 |
+| d:\Projects\Job_Portal\backend\models\job.model.js                   | JavaScript |         51 |          0 |          1 |         52 |
+| d:\Projects\Job_Portal\backend\models\user.model.js                  | JavaScript |         57 |          0 |          2 |         59 |
+| d:\Projects\Job_Portal\backend\package-lock.json                     | JSON       |      3,337 |          0 |          1 |      3,338 |
+| d:\Projects\Job_Portal\backend\package.json                          | JSON       |         39 |          0 |          1 |         40 |
+| d:\Projects\Job_Portal\backend\routes\application.route.js           | JavaScript |          9 |          0 |          6 |         15 |
+| d:\Projects\Job_Portal\backend\routes\chatbot.route.js               | JavaScript |         20 |          0 |          6 |         26 |
+| d:\Projects\Job_Portal\backend\routes\company.route.js               | JavaScript |         10 |          0 |          5 |         15 |
+| d:\Projects\Job_Portal\backend\routes\job.route.js                   | JavaScript |          9 |          0 |          5 |         14 |
+| d:\Projects\Job_Portal\backend\routes\user.route.js                  | JavaScript |         11 |          0 |          6 |         17 |
+| d:\Projects\Job_Portal\backend\utils\cloudinary.js                   | JavaScript |          9 |          0 |          1 |         10 |
+| d:\Projects\Job_Portal\backend\utils\datauri.js                      | JavaScript |          8 |          0 |          3 |         11 |
+| d:\Projects\Job_Portal\backend\utils\db.js                           | JavaScript |         11 |          0 |          1 |         12 |
+| Total                                                                |            |      4,135 |         21 |        100 |      4,256 |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
