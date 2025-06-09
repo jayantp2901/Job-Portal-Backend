@@ -17,7 +17,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: [process.env.FRONTEND_URL || 'http://localhost:5173'],
   credentials: true
 }));
 app.use(express.json());
@@ -34,7 +34,10 @@ app.use("/api/v1/chatbot", chatbotRoute); // ✅ Use the chatbot route
 
 // Start Server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  connectDB();
-  console.log(`Server running at port ${PORT}`);
+connectDB().then(() => {
+  app.listen(PORT, () => {
+    console.log(`✅ Server running at port ${PORT}`);
+  });
+}).catch((err) => {
+  console.error("❌ Failed to connect to MongoDB:", err);
 });
